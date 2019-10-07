@@ -7,7 +7,7 @@
 <title>목록보기</title>
 </head>
 <body>
-	<h2>* 상품 자료(@MVC : jdbcdaosupport 방법으로 DB 접근) *</h2>
+	<h2>* 상품 자료(@MVC : mybatis 방법으로 DB 접근) *</h2>
 	<table border="1">
 		<tr><th>코드</th><th>품명</th><th>수량</th><th>가격</th></tr>
 		<c:forEach var="s" items="${datas }">
