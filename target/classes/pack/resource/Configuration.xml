@@ -6,6 +6,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<typeAliases>
 		<typeAlias type="pack.model.SangpumDto" alias="dto"/>
+		<typeAlias type="pack.controller.SangpumBean" alias="formbean"/>
 	</typeAliases>
  	<mappers>
   		<mapper resource="pack/resource/DataMapper.xml" />

@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
 
+import pack.controller.SangpumBean;
+
 @Repository
 public class SangpumImpl extends SqlSessionDaoSupport implements SangpumInter {
 	@Autowired
@@ -20,4 +22,8 @@ public class SangpumImpl extends SqlSessionDaoSupport implements SangpumInter {
 		return getSqlSession().selectList("selectDataAll");
 	}
 
+	@Override
+	public List search(SangpumBean bean) throws DataAccessException {
+		return getSqlSession().selectList("selectSearch", bean);
+	}
 }

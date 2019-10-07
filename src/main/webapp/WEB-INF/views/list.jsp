@@ -18,6 +18,14 @@
 				<td>${s.dan }</td>
 			</tr>
 		</c:forEach>
+		<tr>
+			<td colspan="4">
+				<form action="search" method="post">
+					상품명 : <input type="text" name="searchValue">
+					<input type="submit" value="검색">
+				</form>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>

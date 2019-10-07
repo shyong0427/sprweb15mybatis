@@ -7,4 +7,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	 <select id="selectDataAll" resultType="dto">
 	 	select * from sangdata
 	 </select>
+	 
+	 <select id="selectSearch" parameterType="formbean" resultType="dto">
+	 	select code, sang, su, dan from sangdata where sang like concat('%', #{searchValue}, '%')
+	 </select>
 </mapper>
